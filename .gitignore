@@ -1,0 +1,8 @@
+build/server/*
+build/public/home/*
+node_modules
+*.log*
+.svn
+.idea
+.DS_Store
+

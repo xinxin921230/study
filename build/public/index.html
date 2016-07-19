@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="Family-tree">
+  <meta name="author" content="Heineiuo">
+  <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+  <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+  <meta name="apple-mobile-web-app-title" content="Material Console">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="HandheldFriendly" content="True">
+  <meta http-equiv="cleartype" content="on">
+
+  <style>
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box
+  }
+
+  body {
+    margin: 0;
+    background-color: rgb(246, 246, 246);
+  }
+
+  </style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+  window.__APIHOST = "/api"
+</script>
+<script src="./home/vendor.js"></script>
+<script src="./home/app.js"></script>
+<script>
+  if (window.top != window){
+    if (window.top.location.href.search('http://account.qingtime.cn')==0){
+      window.top.location.reload()
+    }
+    window.top.location.href = 'http://account.qingtime.cn'
+  }
+</script>
+</body>
+</html>
