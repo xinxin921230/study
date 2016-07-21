@@ -57,7 +57,7 @@ const webpackClientConfigCreator = (clientName, options) =>{
     context: process.cwd(),
     devtool: false,
     entry: {
-      'app': [`./src/entry/${clientName}.js`],
+      'app': [`./src/${clientName}.js`],
       'vendor': [
         "react",
         "react-dom",
@@ -120,7 +120,7 @@ const webpackServerConfigCreator = (serverName) => {
     devtool: false,
     target: 'node',
     entry: {
-      app: [`${process.cwd()}/src/entry/${serverName}.js`]
+      app: [`${process.cwd()}/src/${serverName}.js`]
     },
     output: {
       path: `${process.cwd()}/build/server`,

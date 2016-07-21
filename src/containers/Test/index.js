@@ -4,6 +4,9 @@ import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import AutoCompleteExampleSimple from '../../components/AutoCompleteExampleSimple'
+import Hello from '../../components/Hello'
+import Timer from '../../components/Timer'
+import Header from '../../components/Header'
 
 
 
@@ -13,6 +16,7 @@ class Test extends React.Component {
     return (
       <div>
       <div>
+        <Header/>
         <Link to="/Unlock">跳转回首页</Link>
       </div>
       <div>
@@ -22,9 +26,11 @@ class Test extends React.Component {
         </div>
       </MuiThemeProvider>
       </div>
+        <Hello name="world"/>
+        <Timer/>
       </div>
       
-    );
+    )
   }
 }
 

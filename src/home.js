@@ -10,14 +10,14 @@ import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 import "babel-register"
 import "babel-polyfill"
 import "whatwg-fetch"
-import "../util/DragDropTouch"
+import "./util/DragDropTouch"
 
 // store
 // import configure from "../dataflow/store"
 // containers
-import Home from "../containers/Home"
-import Test from "../containers/Test"
-import Unlock from "../containers/Unlock"
+import Home from "./containers/Home"
+import Test from "./containers/Test"
+import Unlock from "./containers/Unlock"
 
 
 injectTapEventPlugin()
