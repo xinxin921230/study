@@ -10,24 +10,38 @@ import Header from '../../components/Header'
 
 
 
-
 class Test extends React.Component {
+
+  state = {
+    moveY: 0
+  };
+
+
+  handleMousewheel = (e) => {
+    const moveY = e.deltaY;
+    this.setState({moveY: moveY})
+  };
+
   render() {
     return (
-      <div>
-      <div>
-        <Header/>
-        <Link to="/Unlock">跳转回首页</Link>
-      </div>
-      <div>
-      <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
+      <div style={{height: 2000}}
+           onWheel={this.handleMousewheel}
+           onScroll={this.handleMousewheel}>
         <div>
-          <AutoCompleteExampleSimple/>
+          <Header moveY={this.state.moveY}/>
+          <Link to="/Unlock">跳转回首页</Link>
+          <Link to="/todo">todo</Link>
+
         </div>
-      </MuiThemeProvider>
-      </div>
-        <Hello name="world"/>
-        <Timer/>
+        <div>
+          <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
+            <div>
+              <AutoCompleteExampleSimple/>
+            </div>
+          </MuiThemeProvider>
+        </div>
+          <Hello name="world"/>
+          <Timer/>
       </div>
       
     )

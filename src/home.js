@@ -18,6 +18,7 @@ import "./util/DragDropTouch"
 import Home from "./containers/Home"
 import Test from "./containers/Test"
 import Unlock from "./containers/Unlock"
+import TodoApp from "./containers/TodoApp"
 
 
 injectTapEventPlugin()
@@ -29,6 +30,7 @@ window.onload = function(){
       <Route path="/" component={Home}/>
       <Route path="/test" component={Test}/>
       <Route path="/unlock" component={Unlock}/>
+      <Route path="/todo" component={TodoApp}/>
     </Router>
   ), document.getElementById('app'))
 }

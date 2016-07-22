@@ -19,12 +19,11 @@ class Timeline extends Component {
         content: 'Cindy为您开启时光之旅'
       }
     ]
-  }
+  };
 
 
   renderCards = () => {
-    const {data} = this.props
-    
+    const {data} = this.props;
     const html = data.map((item, index)=> {
       return (
         <div key={index} style={{position: "relative"}}>
@@ -35,18 +34,15 @@ class Timeline extends Component {
           </div>
         </div>
       )
-    })
+    });
     return html
-  }
+  };
 
   render () {
-
-
     return (
       <div style={{position: "relative"}}>
         <div>
           {this.renderCards()}
-
         </div>
         <div style={style.line()}>
           <div>
@@ -54,11 +50,7 @@ class Timeline extends Component {
             <img src='heart.svg' alt="" style={{width:'20px',position:"absolute", marginLeft:'-10px', bottom: '-14px'}} />
           </div>
         </div>
-
       </div>
-
-
-
     )
   }
 }

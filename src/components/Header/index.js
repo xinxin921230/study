@@ -5,26 +5,23 @@ import * as style from './style'
 
 
 class Header extends Component {
-  
-  state = {
-    opcity: 0
-  }
 
 
-  handleMousewheel = (e) => {
-    this.setstate( 
-      
-    )
-    
-  }
-  
+  Hide = () => {
+
+   if ( this.props.moveY <= 0) {
+     return style.box()
+   }
+   if ( this.props.moveY > 0) {
+     return style.hidebox()
+   }
+ }
+
   render () {
+    console.log(this.props.moveY)
     return(
-      <div onmousewheel={this.handleMousewheel}
-           style={style.box()}>
-      </div>
+        <div style={this.Hide()}></div>
     )
-    
   }
 }
 
