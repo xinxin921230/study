@@ -9,8 +9,6 @@ import Timer from '../../components/Timer'
 import Header from '../../components/Header'
 import Sentence from '../../components/Sentence'
 
-
-
 class Test extends React.Component {
 
   state = {
