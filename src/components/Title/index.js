@@ -23,7 +23,7 @@ class Title extends Component {
     return (
         <div style={this.state.up}>
           <div>
-            <img src="RedFace.png" alt="" width="300px"/>
+            <img src="RedFace.png" alt="" width="200px"/>
           </div>
           <div>I Design</div>
           <div>“Design changed my life, after graduated from university, I began learning design.
