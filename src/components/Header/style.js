@@ -8,8 +8,10 @@ export const box = factory({
     top:0,
     position: 'fixed',
     backgroundColor:'#4a75a2',
-    transition:'all .5s ease'
-  }
+    transition:'all .5s ease',
+    boxShadow:'0 0 10px #6d6d6d',
+
+}
 })
 
 
@@ -20,6 +22,7 @@ export const hidebox= factory({
     top: '-50px',
     position: 'fixed',
     backgroundColor:'#4a75a2',
-    transition:'all .5s ease'
+    transition:'all .5s ease',
+    boxShadow:'0 0 10px #6d6d6d',
   }
 })

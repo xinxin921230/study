@@ -7,43 +7,55 @@ import AutoCompleteExampleSimple from '../../components/AutoCompleteExampleSimpl
 import Hello from '../../components/Hello'
 import Timer from '../../components/Timer'
 import Header from '../../components/Header'
+import Sentence from '../../components/Sentence'
 
 
 
 class Test extends React.Component {
 
   state = {
-    moveY: 0
+    showSentence: false,
+    moveY: 0,
+    y:0
   };
-
 
   handleMousewheel = (e) => {
     const moveY = e.deltaY;
-    this.setState({moveY: moveY})
+    const {y, showSentence}=this.state;
+    let nextY = y + moveY;
+    if (nextY < 0) nextY = 0;
+    if (nextY > 2000) nextY = 2000;
+
+    console.log(`nexY: ${nextY}`)
+
+    this.setState({moveY:moveY})
+
+    if (nextY > 300 && !showSentence) {
+      this.setState({showSentence: true})
+    }
+
+    this.setState({
+      y: nextY,
+    });
   };
 
+
   render() {
+    console.log(this.state.y)
     return (
-      <div style={{height: 2000}}
+      <div>
+         <div style={{height: 2000}}
            onWheel={this.handleMousewheel}
            onScroll={this.handleMousewheel}>
-        <div>
+          <div>
           <Header moveY={this.state.moveY}/>
+          <Sentence y={this.state.y} show={this.state.showSentence} />
           <Link to="/Unlock">跳转回首页</Link>
           <Link to="/todo">todo</Link>
+          </div>
+         </div>
 
-        </div>
-        <div>
-          <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
-            <div>
-              <AutoCompleteExampleSimple/>
-            </div>
-          </MuiThemeProvider>
-        </div>
-          <Hello name="world"/>
-          <Timer/>
       </div>
-      
     )
   }
 }

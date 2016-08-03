@@ -30,7 +30,6 @@ window.onload = function(){
       <Route path="/" component={Home}/>
       <Route path="/test" component={Test}/>
       <Route path="/unlock" component={Unlock}/>
-      <Route path="/todo" component={TodoApp}/>
     </Router>
   ), document.getElementById('app'))
 }

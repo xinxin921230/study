@@ -20,7 +20,10 @@ class Header extends Component {
   render () {
     console.log(this.props.moveY)
     return(
-        <div style={this.Hide()}></div>
+      <div>
+        <div style={this.Hide()}>
+        </div>
+      </div>
     )
   }
 }
