@@ -26,3 +26,15 @@ export const hidebox= factory({
     boxShadow:'0 0 10px #6d6d6d',
   }
 })
+
+
+export const Nav= factory({
+  default: {
+   float:'left',
+   listStyle:'none',
+   color:"white",
+   fontSize:'20px',
+   fontFamily:'Arial',
+   paddingLeft:'20px',
+  }
+})

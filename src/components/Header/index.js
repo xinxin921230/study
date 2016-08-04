@@ -22,6 +22,12 @@ class Header extends Component {
     return(
       <div>
         <div style={this.Hide()}>
+          <ul>
+            <li style={style.Nav()}>About</li>
+            <li style={style.Nav()}>Work</li>
+            <li style={style.Nav()}>Contact</li>
+            <li style={style.Nav()}>Blog</li>
+          </ul>
         </div>
       </div>
     )

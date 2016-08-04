@@ -37,7 +37,7 @@ class Test extends React.Component {
 
     this.setState({moveY:moveY})
 
-    if (nextY > 300 && !showSentence) {
+    if (nextY > 250 && !showSentence) {
       this.setState({showSentence: true})
     }
 
