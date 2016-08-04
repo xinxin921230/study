@@ -39,7 +39,7 @@ class Sentence extends Component {
            </div>
           <div style={this.state.wordStyle}>
 
-            <div style={{lineHeight:'36px', maxWidth:600, margin:'0 auto'}}>
+            <div style={{lineHeight:'36px', maxWidth:600, margin:'0 auto',marginTop:'13px',}}>
               My name is Martin.
             I’m a Designer, Code Lover and Lifelong-learner.</div>
           </div>

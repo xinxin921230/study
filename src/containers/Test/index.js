@@ -68,6 +68,7 @@ class Test extends React.Component {
             */}
           </div>
 
+
            <div className={cx('row')}>
              <div className={cx('item')}>
                {/*<div className={cx('inner')}></div>*/}
@@ -89,6 +90,8 @@ class Test extends React.Component {
                <img src="design2.png"  alt="" className={cx('inner')}/>
              </div>
            </div>
+
+
          </div>
       </div>
     )
