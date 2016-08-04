@@ -28,7 +28,7 @@ class Sentence extends Component {
     console.log(this.state)
 
     return(
-        <div>
+        <div >
           <div style={this.state.logoStyle}>
             <div>
               <img src="Logo.png" alt="" />

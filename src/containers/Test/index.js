@@ -11,7 +11,6 @@ import Sentence from '../../components/Sentence'
 import Title from '../../components/Title'
 import  Row from 'antd/lib/row'
 import  Col  from 'antd/lib/col'
-import * as style from './style'
 import css from './css.css'
 import classnames from 'classnames/bind'
 
@@ -59,7 +58,7 @@ class Test extends React.Component {
            onScroll={this.handleMousewheel}>
            <div>
             <Header moveY={this.state.moveY}/>
-            <div>
+            <div style={{height:800}}>
              <Title/>
              <Sentence y={this.state.y} show={this.state.showSentence} />
             </div>
@@ -71,13 +70,23 @@ class Test extends React.Component {
 
            <div className={cx('row')}>
              <div className={cx('item')}>
-               <div className={cx('inner')}></div>
+               {/*<div className={cx('inner')}></div>*/}
+               <img src="design2.png" alt="" className={cx('inner')}/>
              </div>
              <div className={cx('item')}>
-               <div className={cx('inner')}></div>
+               <img src="design2.png"  alt="" className={cx('inner')}/>
              </div>
              <div className={cx('item')}>
-               <div className={cx('inner')}></div>
+               <img src="design2.png"  alt="" className={cx('inner')}/>
+             </div>
+             <div className={cx('item')}>
+               <img src="design2.png"  alt="" className={cx('inner')}/>
+             </div>
+             <div className={cx('item')}>
+               <img src="design2.png"  alt="" className={cx('inner')}/>
+             </div>
+             <div className={cx('item')}>
+               <img src="design2.png"  alt="" className={cx('inner')}/>
              </div>
            </div>
          </div>

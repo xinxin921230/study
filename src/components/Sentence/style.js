@@ -13,6 +13,7 @@ export const origin= factory({
     textAlign:'center',
     fontFamily:"Helvetica",
     margin:'0 auto',
+    position:'absolute',
   }
 });
 
@@ -20,9 +21,10 @@ export const origin= factory({
 
 export const origin2 = factory({
   default: {
-    top: 1000,
+    top: 950,
     transitionDelay:"0.2s",
     margin:'0 auto',
+    position:'absolute',
   }
 });
 
