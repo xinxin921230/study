@@ -15,7 +15,7 @@ class Title extends Component {
   };
   
   componentDidMount = () => {
-    this.setTimeout = setTimeout(this.show,1000);
+    this.setTimeout = setTimeout(this.show,500);
   };
 
 
@@ -23,9 +23,9 @@ class Title extends Component {
     return (
         <div style={this.state.up}>
           <div>
-            <img src="RedFace.png" alt="" width="200px"/>
+            <img src="RedFace.png" width="200px"/>
           </div>
-          <div>I Design</div>
+          <div style={{marginTop:"25px"}}>I Design</div>
           <div>“Design changed my life, after graduated from university, I began learning design.
           I crafting some kinetic things & making design interactively.”
           </div>

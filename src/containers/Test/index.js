@@ -8,6 +8,16 @@ import Hello from '../../components/Hello'
 import Timer from '../../components/Timer'
 import Header from '../../components/Header'
 import Sentence from '../../components/Sentence'
+import Title from '../../components/Title'
+import  Row from 'antd/lib/row'
+import  Col  from 'antd/lib/col'
+import * as style from './style'
+import css from './css.css'
+import classnames from 'classnames/bind'
+
+const cx = classnames.bind(css)
+
+
 
 class Test extends React.Component {
 
@@ -38,21 +48,39 @@ class Test extends React.Component {
   };
 
 
+
+
   render() {
     console.log(this.state.y)
     return (
-      <div>
-         <div style={{height: 2000}}
+      <div >
+        <div style={{height: 2000}}
            onWheel={this.handleMousewheel}
            onScroll={this.handleMousewheel}>
-          <div>
-          <Header moveY={this.state.moveY}/>
-          <Sentence y={this.state.y} show={this.state.showSentence} />
-          <Link to="/Unlock">跳转回首页</Link>
-          <Link to="/todo">todo</Link>
+           <div>
+            <Header moveY={this.state.moveY}/>
+            <div>
+             <Title/>
+             <Sentence y={this.state.y} show={this.state.showSentence} />
+            </div>
+            {/*
+            <Link to="/Unlock">跳转回首页</Link>
+            <Link to="/todo">todo</Link>
+            */}
           </div>
-         </div>
 
+           <div className={cx('row')}>
+             <div className={cx('item')}>
+               <div className={cx('inner')}></div>
+             </div>
+             <div className={cx('item')}>
+               <div className={cx('inner')}></div>
+             </div>
+             <div className={cx('item')}>
+               <div className={cx('inner')}></div>
+             </div>
+           </div>
+         </div>
       </div>
     )
   }

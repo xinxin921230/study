@@ -31,14 +31,17 @@ class Sentence extends Component {
         <div>
           <div style={this.state.logoStyle}>
             <div>
-              <img src="Logo.png" alt=""/>
+              <img src="Logo.png" alt="" />
             </div>
+            <div style={{marginTop:"25px"}}>
             Hi, my friend!
-          </div>
-
+            </div>
+           </div>
           <div style={this.state.wordStyle}>
-            My name is Martin.
-            I’m a Designer, Code Lover and Lifelong-learner.
+
+            <div style={{lineHeight:'36px', maxWidth:600, margin:'0 auto'}}>
+              My name is Martin.
+            I’m a Designer, Code Lover and Lifelong-learner.</div>
           </div>
         </div>
     )

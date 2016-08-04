@@ -95,7 +95,17 @@ const webpackClientConfigCreator = (clientName, options) =>{
           query: {
             presets: ['es2015', 'stage-0', 'react']
           }
+        },
+        {
+          test: /\.css$/,
+          include: /src/,
+          loaders: [
+            'style-loader',
+            'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
+            'postcss-loader'
+          ]
         }
+
       ]
     },
     plugins: []

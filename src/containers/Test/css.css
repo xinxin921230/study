@@ -1,0 +1,40 @@
+.row:after {
+  display: table;
+  clear: both;
+  content: '';
+
+}
+
+.item {
+  padding: 10px;
+  float: left;
+  width: 33%;
+  top:1200px;
+  margin-top: 50px;
+}
+
+
+.item .inner {
+  background-color: #000;
+  height: 300px;
+  margin-top: 50px;
+}
+
+@media all and (max-width: 768px) {
+  .item {
+    width: 50%;
+
+  }
+}
+@media all and (max-width: 480px) {
+  .item {
+    width: 50%;
+
+  }
+}
+@media all and (max-width: 320px) {
+  .item {
+    width: 100%;
+
+  }
+}
