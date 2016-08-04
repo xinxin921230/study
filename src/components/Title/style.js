@@ -42,6 +42,7 @@ export const button= factory({
     margin:'0 auto',
     // marginLeft:'500px',
     textAlign:'center',
+    marginTop:"30px",
   }
 });
 

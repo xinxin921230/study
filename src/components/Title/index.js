@@ -30,7 +30,7 @@ class Title extends Component {
           I crafting some kinetic things & making design interactively.”
           </div>
           <Link to="/Test">
-          <span style={style.button()}>跳转</span>
+          <img style={style.button()} src="more.svg" alt="" width="26px" />
           </Link>
         </div>
     );
